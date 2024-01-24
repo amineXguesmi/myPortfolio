@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon4 from "../assets/img/nav-icon4.svg";
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
@@ -33,7 +35,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""} >
             <Container>
                 <Navbar.Brand href="/">
-                    <img src={require('../assets/img/logo.png')} alt="Logo-" className='nav-logo me-3'  />
+                    <img src={require('../assets/img/logo.png')} alt="Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
@@ -50,9 +52,9 @@ export const NavBar = () => {
                     </Nav>
                     <Nav className='navbar-text'>
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/mohamed-amine-guesmi-061923230/"><img src={require("../assets/img/nav-icon1.svg")} alt="" /></a>
-                            <a href="https://www.facebook.com/amine.125.gasmi/"><img src={require("../assets/img/nav-icon2.svg")} alt="" /></a>
-                            <a href="https://github.com/amineXguesmi"><img src={require("../assets/img/nav-icon4.svg")} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/mohamed-amine-guesmi-061923230/"><img src={navIcon1} alt="" /></a>
+                            <a href="https://www.facebook.com/amine.125.gasmi/"><img src={navIcon2} alt="" /></a>
+                            <a href="https://github.com/amineXguesmi"><img src={navIcon4} alt="" /></a>
                         </div>
                     </Nav>
                     <br />

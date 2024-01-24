@@ -6,10 +6,14 @@ function ProjectCard({ title, description, imgUrl,githubUrl }) {
         textDecoration: 'none',
         color: '#a1d1bf'
     };
+    const imgStyle = {
+        height: '200px', 
+        objectFit: 'contain',
+    };
     return (
         <Col sm={6} md={4}>
             <div className='proj-imgbx'>
-                <img src={imgUrl} alt="project-iamge" />
+                <img src={imgUrl} alt="project-iamge" style={imgStyle}/>
                 <div className='proj-txtx'>
                     <h3>{title}</h3>
                     <h5>{description}</h5>

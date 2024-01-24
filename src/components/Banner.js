@@ -7,7 +7,12 @@ export const Banner = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const toRotate = ["Mobile Developer", "Web Developer", "Desktop developer"];
     const period = 2000;
-
+    const scrollToContact = () => {
+        const contactElement = document.getElementById('contact');
+        if (contactElement) {
+            contactElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
@@ -45,7 +50,7 @@ export const Banner = () => {
                             Welcome to my Portfolio
                         </span>
                         <h1>
-                            {`Your gateway to the decentralized world `}
+                            Coding My Way 
                         </h1>
                         <h2>
                             <span className='wrap'> {text}</span>
@@ -54,7 +59,9 @@ export const Banner = () => {
                             I am a hardworking and ambitious individual witha great passion for the applications development .
                             I am currently in first year in software engineering in INSAT.
                         </p>
-                        <button onClick={() => { console.log('connect') }} className='align-items-center'>Let's connect  </button>
+                        <div class="buttons">
+                            <button class="btn" onClick={scrollToContact}><span></span><p data-start="Let's connect" data-text="Excellen" data-title="Let's connect"></p></button>
+                        </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={require("../assets/img/Banner.png")} alt="header" />

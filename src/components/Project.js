@@ -54,12 +54,38 @@ function Project() {
 
         },
         {
-            title: "Clima",
+            title: "E_commerce",
+            description: "Kotlin",
+            imgUrl: require("../assets/img/ecommerce.png"),
+            githubUrl: "https://github.com/amineXguesmi/mobile_project"
+
+
+        }, {
+            title: "Smart Transportation",
             description: "Flutter",
-            imgUrl: require("../assets/img/progress.png"),
-            githubUrl: "#"
+            imgUrl: require("../assets/img/transportation.png"),
+            githubUrl: "https://github.com/amineXguesmi/Smart_Portation"
 
 
+        },{
+            title: "currency converter",
+            description: "Flutter",
+            imgUrl: require("../assets/img/currency_exchange.png"),
+            githubUrl: "https://github.com/amineXguesmi/currency-conversion-app"
+
+
+        },
+        {
+            title: "Health app",
+            description: "Flutter",
+            imgUrl: require("../assets/img/health_app.png"),
+            githubUrl: "https://github.com/amineXguesmi/health_app.git"
+        },
+        {
+            title: "Quote app",
+            description: "Flutter",
+            imgUrl: require("../assets/img/quote_app.png"),
+            githubUrl: "https://github.com/amineXguesmi/quote_app"
         },
     ];
     const projectsDesktop = [
